@@ -60,6 +60,16 @@ const bossData = [
     "other2": ""
   },
   {
+    "name": "ルトセーザ",
+    "displayName": "ルトセーザ",
+    "attribute": "",
+    "critical_resistance": "35, 4形態目: 100",
+    "flee": 400,
+    "kinshi": "1形態目\n怯み: ◯\n転倒: ◯\n気絶: ☓\n\n2形態目\n怯み: ☓\n転倒: ◯\n気絶: ◯\n\n3形態目\n怯み: ◯\n転倒: ◯\n気絶: ☓\n\n4形態目\n怯み: ☓\n転倒: ◯\n気絶: ☓",
+    "other1": "※4形態目、物理耐性-15%",
+    "other2": ""
+  },
+  {
     "name": "ガルドゴーレム",
     "displayName": "ガルドゴーレム",
     "attribute": "地",
