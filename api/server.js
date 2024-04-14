@@ -43,7 +43,9 @@ function handleEvent(event) {
 
   let responseMessage
   if (targetBossName === "一覧") {
-    responseMessage = toramBossList.map(boss => boss.name)
+    const nameList = toramBossList.map(boss => boss.name)
+    responseMessage = nameList.join("\n")
+    console.log(responseMessage)
   }
   else if (bossData.length !== 0) {
     responseMessage = formatResponseMessage(bossData)
