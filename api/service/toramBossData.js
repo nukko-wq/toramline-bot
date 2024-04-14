@@ -5,7 +5,7 @@ const bossData = [
     "attribute": "水",
     "critical_resistance": 30,
     "flee": 573,
-    "kinshi": "\n怯み: ◯\n転倒: ◯\n気絶: ◯",
+    "kinshi": "怯み: ◯\n転倒: ◯\n気絶: ◯",
     "other1": "※HP50%で無敵 (ストーム中)妨害全て☓カウンターはなし",
     "other2": ""
   },
