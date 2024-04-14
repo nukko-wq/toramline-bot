@@ -2,6 +2,7 @@ import * as line from '@line/bot-sdk'
 import express from 'express';
 import { findBossData } from "./service/findBossData.js"
 import { formatResponseMessage } from "./service/formatResponseMessage.js"
+import { correctionTargetName } from './service/correctionTargetName.js';
  
 const config = {
     channelSecret: process.env.CHANNEL_SECRET,
@@ -34,7 +35,8 @@ function handleEvent(event) {
     return Promise.resolve(null);
   }
 
-  const targetBossName = event.message.text
+  let targetBossName = event.message.text
+  targetBossName = correctionTargetName(targetBossName)
   const bossData = findBossData(targetBossName)
   console.log(bossData)
 
