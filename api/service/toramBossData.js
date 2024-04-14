@@ -25,7 +25,7 @@ const bossData = [
     "attribute": "水",
     "critical_resistance": 30,
     "flee": 394,
-    "kinshi": "気絶 △ (硬化) ダメージ1\n転倒△ (硬化) ダメージ1\n怯み ◯",
+    "kinshi": "気絶 △ (硬化) ダメージ1\n転倒 △ (硬化) ダメージ1\n怯み ◯",
     "other1": "HP50%で無敵、モブ2体出現、竜巻左右に6つ出現",
     "other2": "左モブを倒すと左3つ竜巻消滅\n右モブを倒すと右3つ竜巻消滅"
   },
@@ -36,7 +36,7 @@ const bossData = [
     "critical_resistance": 35,
     "flee": 390,
     "kinshi": "1段階目\n気絶 ◯\n転倒 ☓\n怯み ◯\n★気絶、怯みで上限30秒間開放\nゲージでリセット\n2段階目\n気絶 ☓\n転倒 ◯\n怯み ◯\n★転倒、怯みで上限30秒間解放",
-    "other1": "",
+    "other1": "ダメージ上限100万",
     "other2": ""
   },
   {
@@ -56,7 +56,7 @@ const bossData = [
     "critical_resistance": "\n水属性時 30\n闇属性時 40",
     "flee": 527,
     "kinshi": "怯み ◯\n水属性時気絶 ☓\n闇属性時 転倒 ☓",
-    "other1": "HP50%または追加のボールが2体出現でHPにロック。ボールを全て倒すとHPロック解除",
+    "other1": "HP50%または追加のボールが2体出現でHPにロック。ボールを全て倒すとHPロック解除。",
     "other2": ""
   },
   {
