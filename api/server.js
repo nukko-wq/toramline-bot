@@ -2,7 +2,8 @@ import * as line from '@line/bot-sdk'
 import express from 'express';
 import { findBossData } from "./service/findBossData.js"
 import { formatResponseMessage } from "./service/formatResponseMessage.js"
-import { correctionTargetName } from './service/correctionTargetName.js';
+import { correctionTargetName } from './service/correctionTargetName.js'
+import toramBossList from "./toramBossData.js"
  
 const config = {
     channelSecret: process.env.CHANNEL_SECRET,
@@ -40,10 +41,17 @@ function handleEvent(event) {
   const bossData = findBossData(targetBossName)
   console.log(bossData)
 
-  const responseMessage = bossData.length !== 0 ? formatResponseMessage(bossData) : "登録されていません"
+  let responseMessage
+  if (targetBossName === "一覧") {
+    responseMessage = toramBossList.map(boss => boss.name)
+  }
+  else if (bossData.length !== 0) {
+    responseMessage = formatResponseMessage(bossData)
+  } else {
+    responseMessage = "登録されていません"
+  }
   console.log(responseMessage)
 
-  const message = "test"
   // create an echoing text message
   const echo = { type: 'text', text: responseMessage };
 
