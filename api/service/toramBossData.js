@@ -60,6 +60,36 @@ const bossData = [
     "other2": ""
   },
   {
+    "name": "ガルドゴーレム",
+    "displayName": "ガルドゴーレム",
+    "attribute": "地",
+    "critical_resistance": 20,
+    "flee": 416,
+    "kinshi": "前半(肩が青色)転倒 ◯\n怯み ◯\n気絶 ◯\n肩が黄色または赤色\n転倒 ☓\n怯み ☓\n気絶 ☓",
+    "other1": "※残りHPによってモードが変化\nHP100%～50%: 青モード\nHP50%～25%: 黃モード\nHP25%～0%: 赤モード",
+    "other2": "※黃モードへ移行後20秒以内に残HPを25%以下に出来なかった場合、最大HPの半分の数値分HPを回復後、赤モードへ移行"
+  },
+  {
+    "name": "イグネウス",
+    "displayName": "灼竜イグネウス",
+    "attribute": "火",
+    "critical_resistance": 20,
+    "flee": 350,
+    "kinshi": "怯み ◯ カウンター発火5m以内\n転倒 ◯ カウンター発火5m以内\n気絶 ◯ カウンター発火5m以内",
+    "other1": "HPを半分削ると強制発火攻撃(一回)",
+    "other2": "発火攻撃: イグネウスから白い波紋\n5m以内にいる全員対象"
+  },
+  {
+    "name": "ミミューガ",
+    "displayName": "欺竜ミミューガ",
+    "attribute": "地",
+    "critical_resistance": 35,
+    "flee": 355,
+    "kinshi": "怯み ◯\n転倒: ◯\n気絶: ☓\nHP50%以下\n怯み: ◯\n転倒: ☓\n気絶: ☓",
+    "other1": "※部位破壊1箇所ごとにDEF,MDEFが低下",
+    "other2": ""
+  },
+  {
     "name": "バウガイ",
     "displayName": "高難易度(260) バウガイ",
     "attribute": "地",
