@@ -3,7 +3,7 @@ import express from 'express';
 import { findBossData } from "./service/findBossData.js"
 import { formatResponseMessage } from "./service/formatResponseMessage.js"
 import { correctionTargetName } from './service/correctionTargetName.js'
-import toramBossList from "./toramBossData.js"
+import toramBossList from "./service/toramBossData.js"
  
 const config = {
     channelSecret: process.env.CHANNEL_SECRET,
