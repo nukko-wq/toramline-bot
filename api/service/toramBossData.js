@@ -63,8 +63,8 @@ const bossData = [
     "name": "ルトセーザ",
     "displayName": "ルトセーザ",
     "attribute": "",
-    "critical_resistance": "35, 4形態目: 100",
-    "flee": 400,
+    "critical_resistance": "35\n4形態目: 100",
+    "flee": "700程度",
     "kinshi": "1形態目\n怯み: ◯\n転倒: ◯\n気絶: ☓\n\n2形態目\n怯み: ☓\n転倒: ◯\n気絶: ◯\n\n3形態目\n怯み: ◯\n転倒: ◯\n気絶: ☓\n\n4形態目\n怯み: ☓\n転倒: ◯\n気絶: ☓",
     "other1": "※4形態目、物理耐性-15%",
     "other2": ""
