@@ -47,8 +47,9 @@ function handleEvent(event) {
     responseMessage = nameList.join("\n")
     console.log(responseMessage)
   }
-  else if (typeof targetBossName === 'number' && isFinite(targetBossName) && targetBossName >= 1 && targetBossName <= 999) {
+  else if (typeof targetBossName === 'string' && /^[1-9]\d{0,2}$/.test(targetBossName)) {
     responseMessage = `https://tanaka0.work/AIO/jp/Straye/ExpSearch?type=mfb&difs=nhlu&levelRange=8&recs=10&myLv=${targetBossName}`
+    console.log(responseMessage)
   }
   else if (bossData.length !== 0) {
     responseMessage = formatResponseMessage(bossData)
