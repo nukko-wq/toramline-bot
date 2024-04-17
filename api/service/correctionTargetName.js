@@ -20,6 +20,8 @@ export const correctionTargetName = (targetName) => {
       break
     case '悪竜ファジーノ':
       correctedName = "ファジーノ"
+    case '楽竜レドルギ':
+      correctedName = "レドルギ"
     default:
       correctedName = targetName
       
