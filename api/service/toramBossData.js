@@ -159,6 +159,16 @@ const bossData = [
     "other1": "※部位破壊でノクバ→上限(10万)\n100万ほどダメージを与えると無敵→無敵後上限解除",
     "other2": "※上限中に妨害を入れると魔力爆発"
   }
+  {
+    "name": "ブリータ",
+    "displayName": "ブリータ",
+    "attribute": "闇",
+    "critical_resistance": "\n1形態目:25\n2形態目: 30",
+    "flee": "\n1形態目: 544\n2形態目: 584",
+    "kinshi": "\n1形態目\n怯み: ◯\n転倒: ◯\n気絶: ◯\n\n2形態目\n怯み: ◯\n転倒: ◯\n気絶: ☓",
+    "other1": "※隕石攻撃中耐性+100%",
+    "other2": ""
+  }
 ]
 
 export default bossData
